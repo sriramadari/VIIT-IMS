@@ -1,9 +1,9 @@
 import React from 'react';
 import './App.css';
-import labs from './assets/labs.jpeg';
-import systems from './assets/systems.jpeg';
-import chairs from './assets/chairs.jpeg';
-
+import labs from './assets/labs.jpg';
+import systems from './assets/systems.jpg';
+import chairs from './assets/chairs.jpg';
+import logo from './assets/logo.png';
 
 
 import { Carousel } from 'react-responsive-carousel';
@@ -13,16 +13,17 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        VIIT INFRASTRUCTURE MANAGEMENT SYSTEM
+       <img className='logo' src={logo} alt="logo" />
+        <p>VIIT INFRASTRUCTURE MANAGEMENT SYSTEM</p> 
       </header>
       <div className="container">
         <div className="info">
-        <Carousel showThumbs={false} autoPlay={true} showStatus={false} interval={1000} infiniteLoop={true}>
-          <div>
-            <img src={labs} alt="labs" />
-          </div>
+        <Carousel showThumbs={false} autoPlay={true} showStatus={false} interval={1500} infiniteLoop={true}>
           <div>
             <img src={systems} alt="systems" />
+          </div>
+          <div>
+            <img src={labs} alt="labs" />
           </div>
           <div>
             <img src={chairs} alt="chairs" />

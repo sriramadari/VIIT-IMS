@@ -7,8 +7,9 @@
   background-color: #282c34;
   min-height: 20vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   width: 100%;
+  gap: 10px;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
@@ -16,10 +17,15 @@
   font-size: 2em;
 }
 
+.logo{
+  width: 100px;
+  height: 100px;
+}
+
 .container {
   display: flex;
   justify-content: space-around;
-  margin-top: 60px; /* Adjust this value to shift the container down */
+  margin-top: 100px; /* Adjust this value to shift the container down */
 }
 
 .info, .login {
@@ -27,21 +33,26 @@
 }
 
 .login {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .login form {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  width: 200px;
+  border: 2px solid lightgrey;
+  gap: 20px;
+  width: 250px;
   padding: 20px;
   border-radius: 5px;
   background-color: #f0f0f0;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login h2{
+  font-size: 2.5em;
 }
 
 .login input {
@@ -59,9 +70,13 @@
   cursor: pointer;
 }
 
+.info{
+  margin-left: 70px;
+}
+
 .carousel .slide img {
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 400px;
   object-fit: cover;
 }
 
